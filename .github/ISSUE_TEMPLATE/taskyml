@@ -1,0 +1,22 @@
+name: "🧩 Task"
+description: Track a single, well-scoped task
+title: "[TASK] <short summary>"
+labels: [task]
+body:
+- type: textarea
+id: desc
+attributes:
+label: Description
+placeholder: What needs to be done and why?
+validations:
+required: true
+- type: checkboxes
+id: acceptance
+attributes:
+label: Acceptance Criteria
+description: Define when this task is done
+options:
+- label: Implementation complete
+- label: Tests added/updated
+- label: Docs updated (if needed)
+- label: Reviewed & approved
